@@ -6,6 +6,20 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Planet - магазин товаров для животных</title>
+
+    <link
+      rel="preload"
+      href="/fonts/onest-v6-cyrillic_latin-regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin />
+    <link
+      rel="preload"
+      href="/fonts/onest-v6-cyrillic_latin-700.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin />
+    <link href="scss/index.scss" rel="stylesheet" />
   </head>
 
   <body>
@@ -19,11 +33,11 @@
     </header>
 
     <main>
-      <h1>Pet Planet - магазин товаров для животных</h1>
+      <h1 class="visually-hidden">Pet Planet - магазин товаров для животных</h1>
 
       <section class="hero">
         <div class="container">
-          <h2>Товары для твоих любимцев</h2>
+          <h2 class="visually-hidden">Товары для твоих любимцев</h2>
           <img
             class="hero__title"
             src="./img/tittle.svg"
@@ -70,7 +84,7 @@
             </li>
 
             <li class="advantages__item">
-              <h3 class="advantages__subtitle">Качество и безопасность</h3>
+              <h3 class="advantages__subtitle">Качество и&nbsp;безопасность</h3>
               <p class="advantages__text">
                 Мы&nbsp;тщательно отбираем товары для наших клиентов, уделяя
                 особое внимание качеству и&nbsp;безопасности.
@@ -117,7 +131,7 @@
           alt="Логотип с лапой магазина Pet Planet" />
 
         <div class="footer__info">
-          <p class="footer__copyright">©Petshop, 2024</p>
+          <p class="footer__copyright">&copy;Petshop, 2024</p>
 
           <ul class="footer__list">
             <li class="footer__item">
