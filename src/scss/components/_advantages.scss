@@ -1,0 +1,62 @@
+@use '../variables' as *;
+
+.advantages {
+  padding: 100px 0;
+  background-color: $carrot;
+  border-radius: 300px 300px 0 0;
+
+  &__bg {
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.3;
+    text-align: center;
+    color: $light;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__item {
+    flex-basis: 33%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 256px;
+      height: 256px;
+      margin: 0 auto;
+      margin-bottom: 12px;
+    }
+
+    &_1::before {
+      background-image: url('../../img/soft-dog-house1.png');
+    }
+    &_2::before {
+      background-image: url('../../img/soft-dog-house2.png');
+    }
+    &_3::before {
+      background-image: url('../../img/dog-advantages.png');
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: $light;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    text-align: center;
+    color: $light;
+  }
+}
