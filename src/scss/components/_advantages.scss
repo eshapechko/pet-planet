@@ -1,62 +1,96 @@
 @use '../variables' as *;
 
 .advantages {
-  padding: 100px 0;
-  background-color: $carrot;
-  border-radius: 300px 300px 0 0;
+  color: $light;
+  position: relative;
 
   &__bg {
+    background-color: $carrot;
+    border-radius: 300px 300px 0 0;
+    background-image: url('/img/pattern.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
   }
 
   &__title {
-    font-weight: 700;
     font-size: 52px;
     line-height: 1.3;
     text-align: center;
-    color: $light;
     margin-bottom: 50px;
   }
 
   &__list {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
 
   &__item {
-    flex-basis: 33%;
+    padding-top: 268px;
+    background-size: 256px;
+    background-position: top;
+    background-repeat: no-repeat;
 
-    &::before {
-      content: '';
-      display: block;
-      width: 256px;
-      height: 256px;
-      margin: 0 auto;
-      margin-bottom: 12px;
+    &_1 {
+      background-image: url('/img/assortiment_1x.png');
     }
-
-    &_1::before {
-      background-image: url('../../img/soft-dog-house1.png');
+    &_2 {
+      background-image: url('/img/quality.png');
     }
-    &_2::before {
-      background-image: url('../../img/soft-dog-house2.png');
-    }
-    &_3::before {
-      background-image: url('../../img/dog-advantages.png');
+    &_3 {
+      background-image: url('/img/personal.png');
     }
   }
 
   &__subtitle {
+    width: min-content;
     font-weight: 700;
     font-size: 28px;
     text-align: center;
-    color: $light;
-    margin-bottom: 12px;
+    margin: 0 auto 12px;
   }
 
   &__text {
     text-align: center;
-    color: $light;
+  }
+
+  &__count-box {
+    position: absolute;
+    top: -115px;
+    left: 0;
+    width: 306px;
+    height: 306px;
+
+    background-image: url('/img/star.svg');
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__count {
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+  }
+
+  &__count-text {
+    max-width: 122px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 396px;
+    height: 682px;
+    top: -338px;
+    right: 0;
+    background-image: url('/img/dog.png');
+    z-index: -1;
   }
 }
