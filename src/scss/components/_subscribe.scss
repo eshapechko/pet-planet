@@ -34,7 +34,7 @@
     padding: 16px 32px;
     width: 100%;
     background-color: transparent;
-    font-size: 24px;
+    font-size: inherit;
     line-height: 1.4;
 
     &::placeholder {
@@ -52,9 +52,7 @@
     border-radius: 40px;
     padding: 16px 31px;
     background-color: $purple;
-
     font-weight: 700;
-    font-size: 24px;
     line-height: 1.4;
     color: $light;
     display: flex;
