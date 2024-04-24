@@ -87,10 +87,24 @@
   }
 
   &__link {
-    transition: color 0.3s ease-in-out;
+    display: inline-block;
+    transition: color 0.3s ease-in-out, outline-color 0.12s ease-in-out;
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    outline-offset: 2px;
 
     &:hover {
       color: $carrot;
+    }
+
+    &:focus-visible {
+      outline-color: $carrot;
+    }
+
+    &:active {
+      color: inherit;
+      outline-color: transparent;
+      opacity: 0.8;
     }
   }
 
