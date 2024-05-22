@@ -44,17 +44,47 @@
   }
 
   &__cart-button {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+  }
+
+  &__cart-cnt {
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    color: $light;
+  }
+
+  &__cart-icon {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
   }
 
   &__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.3;
+    color: $green;
+    margin-bottom: 32px;
   }
 
   &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
+    justify-content: center;
+    gap: 20px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
-  }
-
-  &__product {
+    display: flex;
   }
 }
