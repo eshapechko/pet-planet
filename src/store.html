@@ -55,7 +55,7 @@
 
       <section class="store">
         <div class="container">
-          <div class="store__header">
+          <nav class="store__nav">
             <ul class="store__categories">
               <li class="store__category-item">
                 <button
@@ -90,7 +90,7 @@
                   fill="#E47537" />
               </svg>
             </button>
-          </div>
+          </nav>
 
           <h2 class="store__title">Каталог</h2>
 
@@ -193,5 +193,17 @@
         </address>
       </div>
     </footer>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modal_content">
+          <h2 class="modal_title">Корзина</h2>
+
+          <ul class="modal__cart-items"></ul>
+        </div>
+      </div>
+
+      <button class="modal-overlay_close-button">&times;</button>
+    </div>
   </body>
 </html>
