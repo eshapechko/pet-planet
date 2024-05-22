@@ -1,0 +1,60 @@
+@use '../variables' as *;
+@use '../media' as *;
+
+.store {
+  padding: 120px 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__categories {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__category-button {
+    color: $carrot;
+    padding-bottom: 10px;
+    position: relative;
+
+    &_active {
+      color: $green;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $green;
+      transform: scale(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &_active::after {
+      transform: scale(1);
+    }
+  }
+
+  &__cart-button {
+  }
+
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__product {
+  }
+}

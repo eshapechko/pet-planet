@@ -38,7 +38,7 @@
     <main>
       <h1 class="visually-hidden">Pet Planet - магазин товаров для животных</h1>
 
-      <section class="hero">
+      <section class="hero hero_store">
         <div class="container">
           <h2 class="visually-hidden">Товары для твоих любимцев</h2>
           <img
@@ -50,100 +50,140 @@
           <p class="hero__text">
             Большой выбор домиков, лежанок и&nbsp;кормов для кошек и&nbsp;собак
           </p>
-
-          <a class="hero__store-link" href="/store.html">Перейти в магазин</a>
         </div>
       </section>
 
-      <section class="about">
+      <section class="store">
         <div class="container">
-          <h2 class="about__title">О нас</h2>
-
-          <div class="about__box">
-            <div class="about__content">
-              <p class="about__text">
-                Мы&nbsp;&mdash; команда любящих и&nbsp;заботливых владельцев
-                животных, которые с&nbsp;особым вниманием относятся
-                к&nbsp;потребностям и&nbsp;радостям наших пушистых друзей.
-              </p>
-              <p class="about__text">
-                Стремясь к&nbsp;тому, чтобы ваш питомец был здоровым, счастливым
-                и&nbsp;полным энергии, мы&nbsp;предлагаем только лучшие товары
-                и&nbsp;услуги, проверенные временем и&nbsp;рекомендованные
-                ветеринарами.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="advantages">
-        <div class="advantages__bg">
-          <div class="container">
-            <h2 class="advantages__title">Наши преимущества</h2>
-
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item_1">
-                <h3 class="advantages__subtitle">
-                  Широкий<br />
-                  ассортимент
-                </h3>
-                <p class="advantages__text">
-                  У&nbsp;нас есть все для того, чтобы сделать жизнь вашего
-                  любимца комфортной и&nbsp;уютной.
-                </p>
+          <div class="store__header">
+            <ul class="store__categories">
+              <li class="store__category-item">
+                <button
+                  class="store__category-button store__category-button_active">
+                  Домики
+                </button>
               </li>
-
-              <li class="advantages__item advantages__item_2">
-                <h3 class="advantages__subtitle">
-                  Качество<br />
-                  и&nbsp;безопасность
-                </h3>
-                <p class="advantages__text">
-                  Мы&nbsp;тщательно отбираем товары для наших клиентов, уделяя
-                  особое внимание качеству и&nbsp;безопасности.
-                </p>
+              <li class="store__category-item">
+                <button class="store__category-button">Лежанки</button>
               </li>
-
-              <li class="advantages__item advantages__item_3">
-                <h3 class="advantages__subtitle">
-                  Персональный<br />
-                  подход
-                </h3>
-                <p class="advantages__text">
-                  Мы&nbsp;понимаем, что каждый питомец уникален, поэтому
-                  предлагаем вам индивидуальные рекомендации по&nbsp;выбору
-                  товаров.
-                </p>
+              <li class="store__category-item">
+                <button class="store__category-button">Игрушки</button>
+              </li>
+              <li class="store__category-item">
+                <button class="store__category-button">Корма</button>
               </li>
             </ul>
+
+            <button>
+              <svg
+                class="store__cart-button"
+                width="28"
+                height="28"
+                viewbox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="14" r="2" fill="#E47537" />
+                <circle cx="10" cy="14" r="2" fill="#E47537" />
+                <path
+                  d="M23.2867 10.4534C22.505 9.59003 21.3267 9.08836 19.6934 8.91336V8.02669C19.6934 6.42836 19.0167 4.88836 17.8267 3.81503C16.625 2.71836 15.0617 2.20503 13.44 2.35669C10.6517 2.62503 8.3067 5.32003 8.3067 8.23669V8.91336C6.67336 9.08836 5.49503 9.59003 4.71336 10.4534C3.5817 11.7134 3.6167 13.3934 3.74503 14.56L4.5617 21.0584C4.8067 23.3334 5.72836 25.6667 10.745 25.6667H17.255C22.2717 25.6667 23.1934 23.3334 23.4384 21.07L24.255 14.5484C24.3834 13.3934 24.4067 11.7134 23.2867 10.4534ZM13.6034 3.97836C14.77 3.87336 15.8784 4.23503 16.7417 5.01669C17.5934 5.78669 18.0717 6.88336 18.0717 8.02669V8.84336H9.92836V8.23669C9.92836 6.16003 11.6434 4.16503 13.6034 3.97836ZM9.82336 15.3417H9.8117C9.17003 15.3417 8.64503 14.8167 8.64503 14.175C8.64503 13.5334 9.17003 13.0084 9.8117 13.0084C10.465 13.0084 10.99 13.5334 10.99 14.175C10.99 14.8167 10.465 15.3417 9.82336 15.3417ZM17.99 15.3417H17.9784C17.3367 15.3417 16.8117 14.8167 16.8117 14.175C16.8117 13.5334 17.3367 13.0084 17.9784 13.0084C18.6317 13.0084 19.1567 13.5334 19.1567 14.175C19.1567 14.8167 18.6317 15.3417 17.99 15.3417Z"
+                  fill="#E47537" />
+              </svg>
+            </button>
           </div>
 
-          <div class="advantages__count-box">
-            <p class="advantages__count">10</p>
-            <p class="advantages__count-text">магазинов в&nbsp;сети</p>
-          </div>
-        </div>
-      </section>
+          <h2 class="store__title">Каталог</h2>
 
-      <section class="subscribe">
-        <div class="container">
-          <form class="subscribe__form" action="#" method="post">
-            <h2 class="subscribe__title">
-              Подпишись на&nbsp;рассылку и&nbsp;узнавай о&nbsp;новинках первым!
-            </h2>
+          <ul class="store__list">
+            <li class="store__item">
+              <article class="store__product product">
+                <img
+                  class="product__image"
+                  src="/img/photo.jpg"
+                  alt="Скандинавский домик для собаки" />
 
-            <fieldset class="subscribe__field">
-              <input
-                class="subscribe__input"
-                type="email"
-                name="email"
-                placeholder="E-mail" />
-              <button class="subscribe__button" type="submit" disabled>
-                <span class="subscribe__button-text">Отправить</span>
-              </button>
-            </fieldset>
-          </form>
+                <h3 class="product__title">Скандинавский домик для собаки</h3>
+
+                <p class="product__price">5400&nbsp;₽</p>
+
+                <button class="product__btn-add-cart">Заказать</button>
+              </article>
+            </li>
+
+            <li class="store__item">
+              <article class="store__product product">
+                <img
+                  class="product__image"
+                  src="/img/photo1.jpg"
+                  alt="Скандинавский домик для собаки" />
+
+                <h3 class="product__title">Скандинавский домик для собаки</h3>
+
+                <p class="product__price">5400&nbsp;₽</p>
+
+                <button class="product__btn-add-cart">Заказать</button>
+              </article>
+            </li>
+
+            <li class="store__item">
+              <article class="store__product product">
+                <img
+                  class="product__image"
+                  src="/img/photo2.jpg"
+                  alt="Скандинавский домик для собаки" />
+
+                <h3 class="product__title">Скандинавский домик для собаки</h3>
+
+                <p class="product__price">5400&nbsp;₽</p>
+
+                <button class="product__btn-add-cart">Заказать</button>
+              </article>
+            </li>
+
+            <li class="store__item">
+              <article class="store__product product">
+                <img
+                  class="product__image"
+                  src="/img/photo3.jpg"
+                  alt="Скандинавский домик для собаки" />
+
+                <h3 class="product__title">Скандинавский домик для собаки</h3>
+
+                <p class="product__price">5400&nbsp;₽</p>
+
+                <button class="product__btn-add-cart">Заказать</button>
+              </article>
+            </li>
+
+            <li class="store__item">
+              <article class="store__product product">
+                <img
+                  class="product__image"
+                  src="/img/photo4.jpg"
+                  alt="Скандинавский домик для собаки" />
+
+                <h3 class="product__title">Скандинавский домик для собаки</h3>
+
+                <p class="product__price">5400&nbsp;₽</p>
+
+                <button class="product__btn-add-cart">Заказать</button>
+              </article>
+            </li>
+
+            <li class="store__item">
+              <article class="store__product product">
+                <img
+                  class="product__image"
+                  src="/img/photo5.jpg"
+                  alt="Скандинавский домик для собаки" />
+
+                <h3 class="product__title">Скандинавский домик для собаки</h3>
+
+                <p class="product__price">5400&nbsp;₽</p>
+
+                <button class="product__btn-add-cart">Заказать</button>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
