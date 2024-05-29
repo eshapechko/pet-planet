@@ -25,7 +25,7 @@ const cartItemsList = document.querySelector('.modal__cart-items');
 const modalCloseButton = document.querySelector('.modal-overlay_close-button');
 const cartCount = cartButton.querySelector('.store__cart-cnt');
 
-const createProductCard = ({ photoUrl, name, price }) => {
+const createProductCard = ({ id, photoUrl, name, price }) => {
   const productCard = document.createElement('li');
   productCard.classList.add('store__item');
 
@@ -40,7 +40,7 @@ const createProductCard = ({ photoUrl, name, price }) => {
 
       <p class="product__price">${price}&nbsp;₽</p>
 
-      <button class="product__btn-add-cart">Заказать</button>
+      <button class="product__btn-add-cart" data-id="${id}">Заказать</button>
     </article>
   `;
 
@@ -141,10 +141,10 @@ const addToCart = (productName) => {
 // добавляем в корзину при клике по списку товаров
 productList.addEventListener('click', ({ target }) => {
   if (target.closest('.product__btn-add-cart')) {
-    const productCard = target.closest('.store__product');
-    const productName =
-      productCard.querySelector('.product__title').textContent;
+    console.log(target.dataset.id);
+    const productId = parseInt(target.dataset.id, 10);
+    console.log('productId: ', productId);
 
-    addToCart(productName);
+    addToCart(productId);
   }
 });
