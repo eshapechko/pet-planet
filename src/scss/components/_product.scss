@@ -56,5 +56,16 @@
     font-weight: 700;
     text-align: center;
     color: $light;
+    border: 1px solid transparent;
+    outline: none;
+    transition: border-color 0.2s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #981fd1;
+    }
+
+    &:focus-visible {
+      border-color: $carrot;
+    }
   }
 }

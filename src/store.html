@@ -74,7 +74,7 @@
               </li>
             </ul>
 
-            <button class="store__cart-button">
+            <button class="store__cart-button" aria-label="Корзина">
               <span class="store__cart-cnt">0</span>
               <svg
                 class="store__cart-icon"
@@ -213,20 +213,6 @@
 
               <p class="modal__cart-item-price">5700&nbsp;₽</p>
             </li>
-
-            <li class="modal__cart-item">
-              <img class="modal__cart-item-image" src="img/photo2.jpg" alt="" />
-
-              <h3 class="modal__cart-item-title">Название товара</h3>
-
-              <div class="modal__cart-item-count">
-                <button class="modal__btn modal__minus">-</button>
-                <span class="modal__count">1</span>
-                <button class="modal__btn modal__plus">+</button>
-              </div>
-
-              <p class="modal__cart-item-price">5700&nbsp;₽</p>
-            </li>
           </ul>
 
           <form class="modal__cart-form">
@@ -263,7 +249,7 @@
             </fieldset>
 
             <div class="modal__cart-footer">
-              <button class="modal__cart-button">Заказать</button>
+              <button class="modal__cart-button" disabled>Заказать</button>
 
               <p class="modal__cart-price">0&nbsp;₽</p>
             </div>
@@ -271,7 +257,9 @@
         </div>
       </div>
 
-      <button class="modal-overlay_close-button">&times;</button>
+      <button class="modal-overlay_close-button" aria-label="Закрыть корзину">
+        &times;
+      </button>
     </div>
   </body>
 </html>

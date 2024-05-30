@@ -9,17 +9,31 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: end;
+      gap: 30px;
+    }
   }
 
   &__categories {
     display: flex;
     gap: 28px;
+    overflow-x: auto;
+
+    @include mobile {
+      flex-grow: 1;
+      gap: 16px;
+    }
   }
 
   &__category-button {
     color: $carrot;
     padding-bottom: 10px;
     position: relative;
+    outline: none;
+    border: 1px solid transparent;
 
     &_active {
       color: $green;
@@ -38,6 +52,10 @@
       transition: transform 0.3s ease-in-out;
     }
 
+    &:focus-visible {
+      border-color: $carrot;
+    }
+
     &_active::after {
       transform: scale(1);
     }
@@ -48,6 +66,12 @@
     display: block;
     width: 28px;
     height: 28px;
+    outline: none;
+    border: 1px solid transparent;
+
+    &:focus-visible {
+      border-color: $carrot;
+    }
 
     @include bigscreen {
       width: 32px;
@@ -62,6 +86,10 @@
     font-size: 12px;
     line-height: 1;
     color: $light;
+
+    @include mobile {
+      line-height: 3;
+    }
   }
 
   &__cart-icon {
@@ -97,5 +125,6 @@
 
   &__item {
     display: flex;
+    justify-self: center;
   }
 }
